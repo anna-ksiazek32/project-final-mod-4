@@ -1,0 +1,207 @@
+/*Variables*/
+/*Global*/
+h4 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.first {
+  text-align: center;
+  font-family: droid-serif, serif;
+  font-size: 17px;
+  font-style: italic;
+}
+
+p {
+  text-align: center;
+}
+
+.services, .portfolio {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+/*Navigation*/
+nav .nav {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  z-index: 2;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav p {
+  position: absolute;
+  z-index: 2;
+  top: 3%;
+  left: 10%;
+  font-family: "Brush Script MT";
+  color: #fed136;
+  font-style: italic;
+  font-size: 26px;
+}
+
+/*Firstone*/
+.container-fluid {
+  position: relative;
+  padding: 0;
+}
+
+.firstone {
+  margin: 0;
+}
+
+.firstone .container-fluid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container-fluid .row {
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.row .button {
+  text-align: center;
+}
+
+button {
+  color: #fed136;
+}
+
+.firstone h3 {
+  font-family: droid-serif, serif;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.firstone h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 75px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+.firstone .btn {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+/*Services*/
+.services .card-body p {
+  font-family: roboto-slab, serif;
+}
+
+.services .card-image i {
+  color: #fed136;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 35px;
+  border: 3px solid #fed136;
+  height: 80px;
+  width: 80px;
+  line-height: 2;
+}
+
+.services .card-image {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.services .card {
+  border: none;
+}
+
+/*Portfolio*/
+.card-image img {
+  width: 100%;
+}
+
+.portfolio .marketing {
+  padding-top: 20px;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+
+.portfolio .title {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/*Footer*/
+.copyright p {
+  text-align: left;
+  line-height: 5;
+}
+
+.icon {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 24px;
+  padding: 0;
+}
+
+.icon li {
+  font-size: 0px;
+  padding: 0 5px;
+}
+
+.link i {
+  border-radius: 50%;
+  background-color: #222222;
+  color: white;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  line-height: 2;
+}
+
+/*Media
+
+@media (max-width: 1200px) {
+
+    .container-fluid button {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container-fluid h3 {
+        font-size: 75%;
+    }
+}
+@media (max-width: 1200px) {
+
+    .container-fluid h1, {
+        font-size: 75%;
+    }
+} */
+/*# sourceMappingURL=style.css.map */

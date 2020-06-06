@@ -11,21 +11,21 @@ $color-main: #fed136;
 h4 {
     text-align: center;
     font-family: $font-text-two;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 h2 {
     text-align: center;
     font-family: $font-text-two;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .first {
     text-align: center;
     font-family: $font-text-one;
-    font-size: 17px;
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -33,54 +33,54 @@ p {
     text-align: center;
 }
 
-.services, .portfolio {
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
-
-/*Navigation*/
-
-nav .nav {
-    position: absolute;
-    right: 10%;
-    top: 3%;
-    z-index: 2;
-}
-
-.nav-link {
-    color: $color-light;
-    font-family: $font-text-two;
-} 
-
-nav p {
-    position: absolute;
-    z-index: 2;
-    top: 3%;
-    left: 10%;
-    font-family: "Brush Script MT";
-    color: $color-main;
-    font-style: italic;
-    font-size: 26px;
-}
 
 /*Firstone*/
 
 .container-fluid {
-    position: relative;
-    padding: 0;
+    background-image: url('../images/Background-Image.png');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
 
-.firstone {
+.container-fluid .row {
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.row .nav {
+    list-style-type: none;
     margin: 0;
 }
 
-.firstone .container-fluid img {
-    width: 100%;
-    object-fit: cover;
+.row .nav li {
+    display: inline-flex;    
+    padding: 0 35px 0 35px;
 }
 
+.nav a {
+    color: $color-light;
+    font-family: $font-text-two;
+    font-size: 17px;
+    text-decoration: none;
+    &:hover {
+        color: $color-main;   
+    }
+}
 
-.container-fluid .row {
+.firstone .row p {
+    color: $color-main;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    position: relative;
+}
+
+.container-fluid .content {
     right: auto;
     bottom: auto;
     left: 50%;
@@ -88,41 +88,47 @@ nav p {
     transform: translate(-50%, -50%);
     position: absolute;
     padding: 0;
-    justify-content: center;
-}
-
-.row .button {
     text-align: center;
 }
 
-button {
-    color: $color-main;
-}
-
-.firstone h3 {
+.content h3 {
     font-family: $font-text-one;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     color: $color-light;
     font-style: italic;
 }
 
-.firstone h1 {
+.content h1 {
     font-family: $font-text-two;
-    font-size: 75px;
+    font-size: 90px;
     font-weight: bolder;
     text-align: center;
     color: $color-light;
 }
 
-.firstone .btn {
+.content .btn {
     font-family: $font-text-two;
     color: $color-light;
     font-weight: bold;
+    text-align: center;
+    padding: 16px 40px;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-color: $color-main;
+    border-color: $color-main;
+    border-radius: 5%;
+    text-decoration: none;
 }
+
 
 /*Services*/
 
+.services  {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 .services .card-body p {
     font-family: $font-text-three;
@@ -136,86 +142,199 @@ button {
     border: 3px solid $color-main;
     height: 80px;
     width: 80px;
-    line-height: 2;
+    line-height: 80px;
 }
-
 
 .services .card-image {
     text-align: center;
-    padding-top: 40px;
 }
 
 .services .card {
     border: none;
+    padding-top: 40px;
+}
+
+.services .fser {
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*Portfolio*/
+
+.portfolio .fport {
+    justify-content: center;
+    flex-direction: column;
+}
 
 .card-image img {
     width: 100%;
 }
 
-.portfolio .marketing {
+.portfolio .row {
     padding-top: 20px;
 }
 
+
 .portfolio {
+    padding-top: 75px;
+    padding-bottom: 75px;
     background-color: #f7f7f7;
 }
 
-.portfolio .title {
-    padding-top: 75px;
-    padding-bottom: 75px;
+.sport .card-body {
+    background-color: $color-light;
+}
+
+.sport h4, p {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.sport p {
+    font-family: $font-text-one;
+    font-style: italic;
+}
+
+.portfolio .wrap {
+    padding-bottom: 50px;
 }
 
 /*Footer*/
 
-
-.copyright p {
+.footer {
+    padding: 35px 0;
+}
+.footer p {
     text-align: left;
-    line-height: 5;
+    margin: 0;
 }
 
 .icon {
-    display: flex;
-    margin: 24px;
+    margin: 0;
     padding: 0;
+    display: inline-flex;
 }
 
 .icon li {
     font-size: 0px; 
-    padding: 0 5px;
+    padding: 0 10px;
 }
 .link i {
     border-radius: 50%;
     background-color: rgb(34, 34, 34);
     color: $color-light;
-    font-size: 20px;
+    font-size: 21px;
     width: 42px;
     height: 42px;
     text-align: center;
-    line-height: 2;
+    line-height: 42px;
 }
 
-
-/*Media
-
-@media (max-width: 1200px) {
-
-    .container-fluid button {
-        font-size: 75%;
-    }
+.social {
+    padding: 0;
 }
 
-@media (max-width: 1200px) {
-
-    .container-fluid h3 {
-        font-size: 75%;
-    }
+.footer .social {
+    transform: translateX(-50%);
+    text-align: center;
 }
-@media (max-width: 1200px) {
 
-    .container-fluid h1, {
-        font-size: 75%;
+/*Media*/
+
+
+@media (max-width: 767px) {
+
+    .firstone p {
+        display: none;
     }
-} */
+
+    .firstone .row:first-of-type {
+        padding: 0;
+    }
+
+    .firstone .nav {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .content .btn {
+        font-size: 10px;
+        padding: 0;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .card-body h4 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 15px;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer .social {
+        transform: translateX(0%);
+    }
+    .footer p {
+       text-align: center;
+    }
+
+    .icon li {
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+
+
+    .content .btn {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .content h3 {
+        font-size: 30px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .card-body h4 {
+        font-size: 22px;
+    }
+
+    .card-body p {
+        font-size: 18px;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer .social, .copyright {
+        transform: translateX(50%);
+    }
+    .footer p {
+       text-align: center;
+    }
+
+    .icon li {
+        padding: 0;
+    }
+
+}

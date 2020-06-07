@@ -20,6 +20,7 @@ h2 {
     font-family: $font-text-two;
     font-size: 40px;
     font-weight: bold;
+    margin: 0;
 }
 
 .first {
@@ -27,6 +28,8 @@ h2 {
     font-family: $font-text-one;
     font-size: 20px;
     font-style: italic;
+    color: #757575;
+    padding: 10px 0 0 0;
 }
 
 p {
@@ -36,16 +39,20 @@ p {
 
 /*Firstone*/
 
-.container-fluid {
+.firstone {
     background-image: url('../images/Background-Image.png');
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    margin: 0 10px;
 }
 
-.container-fluid .row {
-    justify-content: space-around;
+.firstone .container .row {
     padding: 20px;
+}
+
+.firstone .container .row:last-of-type {
+    justify-content: flex-end;
 }
 
 .row .nav {
@@ -54,8 +61,8 @@ p {
 }
 
 .row .nav li {
-    display: inline-flex;    
-    padding: 0 35px 0 35px;
+    display: inline-flex;   
+    padding: 0 20px 0 20px;
 }
 
 .nav a {
@@ -76,11 +83,7 @@ p {
     padding: 0;
 }
 
-.container-fluid {
-    position: relative;
-}
-
-.container-fluid .content {
+.container .content {
     right: auto;
     bottom: auto;
     left: 50%;
@@ -120,6 +123,7 @@ p {
     border-color: $color-main;
     border-radius: 5%;
     text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -132,6 +136,7 @@ p {
 
 .services .card-body p {
     font-family: $font-text-three;
+    color: #757575;
 }
 
 .services .card-image i {
@@ -154,14 +159,18 @@ p {
     padding-top: 40px;
 }
 
-.services .fser {
+.services .first-wrap {
     justify-content: center;
     flex-direction: column;
 }
 
+.second-wrap {
+    padding-top: 20px;
+}
+
 /*Portfolio*/
 
-.portfolio .fport {
+.portfolio .first-wrapper {
     justify-content: center;
     flex-direction: column;
 }
@@ -170,34 +179,42 @@ p {
     width: 100%;
 }
 
-.portfolio .row {
-    padding-top: 20px;
-}
-
-
 .portfolio {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: #f7f7f7;
-}
-
-.sport .card-body {
-    background-color: $color-light;
-}
-
-.sport h4, p {
-    margin: 0;
-    padding: 20px 0;
-}
-
-.sport p {
-    font-family: $font-text-one;
-    font-style: italic;
 }
 
 .portfolio .wrap {
     padding-bottom: 50px;
+    font-size: 0
 }
+
+.second-wrapper {
+    padding-top: 70px;
+}
+
+.second-wrapper .card-body {
+    background-color: $color-light;
+    padding: 20px 0;
+}
+
+.wrap .card-body h4 {
+    margin: 0;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.wrap .card-body p {
+    margin: 0;
+    font-family: $font-text-one;
+    font-style: italic;
+    color: #757575;
+    font-size: 17px;
+}
+
+
 
 /*Footer*/
 
@@ -207,6 +224,13 @@ p {
 .footer p {
     text-align: left;
     margin: 0;
+    color: #757575;
+    padding: 0;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
 }
 
 .icon {

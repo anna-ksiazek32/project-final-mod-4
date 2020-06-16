@@ -1,5 +1,9 @@
 /*Variables*/
 /*Global*/
+body {
+  margin: 0;
+}
+
 h4 {
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -34,10 +38,12 @@ p {
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  margin: 0 10px;
+  margin: 0;
 }
 
 .firstone .container .row {
+  -ms-flex-align: center;
+      align-items: center;
   padding: 20px;
 }
 
@@ -57,6 +63,10 @@ p {
   padding: 0 20px 0 20px;
 }
 
+.nav li:last-of-type {
+  padding: 0;
+}
+
 .nav a {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -65,11 +75,11 @@ p {
 }
 
 .nav a:hover {
-  color: #fed136;
+  color: #fecf34;
 }
 
 .firstone .row p {
-  color: #fed136;
+  color: #fecf34;
   font-family: 'Dancing Script', cursive;
   font-size: 25px;
   margin: 0;
@@ -112,8 +122,8 @@ p {
   cursor: pointer;
   border-width: 2px;
   border-style: solid;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #fecf34;
+  border-color: #fecf34;
   border-radius: 5%;
   text-decoration: none;
   display: inline-block;
@@ -131,11 +141,11 @@ p {
 }
 
 .services .card-image i {
-  color: #fed136;
+  color: #fecf34;
   text-align: center;
   border-radius: 50%;
   font-size: 35px;
-  border: 3px solid #fed136;
+  border: 3px solid #fecf34;
   height: 80px;
   width: 80px;
   line-height: 80px;
@@ -261,16 +271,21 @@ p {
 
 /*Media*/
 @media (max-width: 767px) {
-  .firstone p {
-    display: none;
-  }
   .firstone .row:first-of-type {
-    padding: 0;
+    display: block;
+    margin: 0;
+  }
+  .firstone .row:last-of-type {
+    display: block;
+    margin: 0;
   }
   .firstone .nav {
     margin: 0;
     text-align: center;
     padding: 0;
+  }
+  .row .nav li {
+    display: block;
   }
   .content .btn {
     font-size: 10px;
@@ -299,6 +314,11 @@ p {
   }
   .footer p {
     text-align: center;
+  }
+  .footer .copyright {
+    padding-top: 10px;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .icon li {
     padding: 0;
@@ -333,6 +353,11 @@ p {
   }
   .footer p {
     text-align: center;
+  }
+  .footer .copyright {
+    padding-top: 10px;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
   .icon li {
     padding: 0;

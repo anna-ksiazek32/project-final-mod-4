@@ -51,21 +51,30 @@ p {
     margin: 0;
 }
 
-.firstone .container .row {
+.firstone .container {
+    margin: auto;
+}
+
+.firstone .container .wrap {
+    display: inline-flex;
     align-items: center;
+    width: 100%;
     padding: 20px;
 }
 
-.firstone .container .row:last-of-type {
+.firstone .container .col-md-10 {
     justify-content: flex-end;
+    padding: 0;
 }
 
-.row .nav {
+.wrap .nav {
+    display: flex;
+    justify-content: flex-end;
     list-style-type: none;
     margin: 0;
 }
 
-.row .nav li {
+.wrap .nav li {
     display: inline-flex;   
     padding: 0 20px 0 20px;
 }
@@ -84,7 +93,7 @@ p {
     }
 }
 
-.firstone .row p {
+.firstone .wrap p {
     color: $color-main;
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
@@ -277,12 +286,15 @@ p {
 
 @media (max-width: 767px) {
 
-    .firstone .row:first-of-type {
+    .firstone .wrap {
+        flex-wrap: wrap;
+    }
+    .firstone .col-md-2 {
         display: block;
         margin: 0;
     }
 
-    .firstone .row:last-of-type {
+    .firstone .col-md-10 {
         display: block;
         margin: 0;
     }
@@ -291,15 +303,16 @@ p {
         margin: 0;
         text-align: center;
         padding: 0;
+        display: block;
     }
 
-    .row .nav li {
+    .firstone .nav li {
         display: block;
     }
 
     .content .btn {
         font-size: 10px;
-        padding: 0;
+        padding: 10px;
     }
 
     .content h3 {
@@ -326,6 +339,7 @@ p {
     .footer .social {
         transform: translateX(0%);
     }
+
     .footer p {
        text-align: center;
     }
@@ -338,22 +352,22 @@ p {
     .icon li {
         padding: 0;
     }
-
 }
+    
 
 @media (min-width: 767px) and (max-width: 1200px) {
 
+  
     .content .btn {
-        font-size: 15px;
-        padding: 0;
+        font-size: 20px;
     }
 
     .content h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .content h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .card-body h4 {
@@ -372,6 +386,7 @@ p {
     .footer .social, .copyright {
         transform: translateX(50%);
     }
+
     .footer p {
        text-align: center;
     }
